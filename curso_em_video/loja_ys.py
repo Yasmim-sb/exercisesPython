@@ -9,7 +9,7 @@ produtos = {
 produto_escolhido = str(input(f'Os produtos disponiveis são: {produtos} \n'
                               f'Qual você quer? '))
 
-forma_de_pagamento = int(input(f'Escolha sua forma de pagamento, tecle o numero'
+forma_de_pagamento = int(input(f'Escolha sua forma de pagamento, tecle o numero' 
                                f' correspondente a forma de pagamento que você escolheu.\n'
                                f' 1 - à vista DINHEIRO/CHEQUE 10% de desconto\n'
                                f' 2 - à vista no CARTÃO: 5% de desconto\n'
