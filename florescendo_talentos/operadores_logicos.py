@@ -4,8 +4,8 @@ print("Para testar operadores lógicos, precisamos de condicionais...")
 operador = input("Qual operador você quer exercitar? (AND, OR, NOT) ").upper()
 
 
-escolha1 = input("Primeira escolha (true ou false): ").lower() == "true"
-escolha2 = input("Segunda escolha (true ou false): ").lower() == "true"
+escolha1 = input("Primeira escolha (true ou false): ").lower()
+escolha2 = input("Segunda escolha (true ou false): ").lower()
 
 
 if operador == "AND":
