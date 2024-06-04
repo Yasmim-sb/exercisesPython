@@ -23,10 +23,16 @@ if saudacao == "sim":
         pedidoExtra = input(" Qual extra você deseja acrescentar? ")
         valor_extra = extras.get(pedidoExtra, 0)
         valor_total += valor_extra
+        print("pedido total: ", valor_total)
+    elif add_extras == 'não':
+        print("Muito obrigada pela confiança e até a próxima!")
+    else:
+        print("opção inválida. Tente novamente.")
 
-    print("pedido total: ", valor_total)
+elif saudacao == 'não':
+    print("Quem sabe uma próxima vez :)")
 else:
-    print("até a próxima! :)")
+    print("Opcão inválida! Tente novamente")
 
 
 

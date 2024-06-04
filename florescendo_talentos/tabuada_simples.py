@@ -20,4 +20,3 @@ elif operacao == "multiplicação":
     print(f"E o resultado da operação é: {resultado}")
 else:
     print("Escolha uma opção válida!")
-    
