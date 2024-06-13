@@ -3,9 +3,12 @@ import random
 frutas = ["uva", "morango", "melancia"]
 
 vegetais = ["beringela", "alface", "brocolis"]
+def escolher_ganhador(array, categoria):
+    elemento_sorteado = random.choice(array).upper()
 
-frutas.extend(vegetais)
+    print(f"os nossos jurados escolheram, {elemento_sorteado} da categoria {categoria} como ganhador!")
 
-elemento_sorteado = random.choice(frutas).upper()
+categorias = [('FRUTAS',frutas), ('VEGETAIS',vegetais)]
 
-print("os nossos jurados escolheram ", elemento_sorteado, " como ganhador!")
+for categoria, array in categorias:
+    escolher_ganhador(array, categoria)
