@@ -12,3 +12,5 @@ categorias = [('FRUTAS',frutas), ('VEGETAIS',vegetais)]
 
 for categoria, array in categorias:
     escolher_ganhador(array, categoria)
+
+
