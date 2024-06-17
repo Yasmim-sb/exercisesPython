@@ -21,7 +21,8 @@ print("você mesmo!")
 print("Vamos comigo em uma jornada pelas ruas de recife procurando pistas sobre o pergamino perdido?\n"
                      "Vamos começar pela praça do marco zero!")
 
-senhor = input("passando pela praça do marco zero, encontramos um senhorzinho em um banco, ele é conhecido por contar historias mirabolantes...\n"
+senhor = input("passando pela praça do marco zero, encontramos um senhorzinho em um banco, "
+               "ele é conhecido por contar historias mirabolantes...\n"
       "quer conversar com ele? (s/n)")
 if senhor == "s":
     print("Senhorzinho : Olá jovem! Em que posso ajudar?")
@@ -48,7 +49,8 @@ if senhor == "n":
     if seguir_mulher == "sim":
         print("...")
         time.sleep(2)
-        print("aqui está! A primeira parte do pergaminho, eu a encontrei a 6 meses e ainda não consegui decifrar...")
+        print("aqui está! A primeira parte do pergaminho, "
+              "eu a encontrei a 6 meses e ainda não consegui decifrar...")
         time.sleep(1)
         print(f"Do folclore brasileiro... Ele começa com {primeira_silaba} e termina com {ultima_silaba}")
         time.sleep(1)
@@ -56,7 +58,8 @@ if senhor == "n":
         if descoberta == "saci-perere":
             print("Mulher: Será? vamos pesquisar mais sobre...")
             time.sleep(1)
-            print("UAU! é isso mesmo! aqui está dizendo que esse passo de frevo é muito antigo e com o tempo foi esquecido\n")
+            print("UAU! é isso mesmo! aqui está dizendo que esse passo de frevo"
+                  " é muito antigo e com o tempo foi esquecido\n")
             print("Não acredito que você descobriu tão facil\n"
                   "Agora estou envergonhada...")
             time.sleep(2)
@@ -67,7 +70,8 @@ if senhor == "n":
             print("...\n")
             print("Mulher: Também fiquei com essa  cara da primeira vez que vi")
             time.sleep(2)
-            descoberta_pista = input("Você pode inverter a palavra, ou embaralhar as letras para ver o que descobre\n"
+            descoberta_pista = input("Você pode inverter a palavra, ou embaralhar as letras"
+                                     " para ver o que descobre\n"
                                      "qual você quer fazer?\n"
                                      "(inverter/ embaralhar")
             if descoberta_pista == "embaralhar":
