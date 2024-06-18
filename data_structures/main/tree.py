@@ -18,16 +18,25 @@ class BinaryTree:
             self.root = None
 
     # percurso em ordem simetrica
-    def inoder(self, node=None):
+    def inorder(self, node=None):
         if node is None:
             node = self.root
         if node.left:
             print('(', end='')
-            self.simetric_traversal(node.left)
+            self.inorder(node.left)
         print(node, end='')
         if node.right:
-            self.simetric_traversal(node.right)
+            self.inorder(node.right)
             print(')', end='')
+
+    def inorder_traversal(self, node=None):
+        if node is None:
+            node = self.root
+        if node.left:
+            self.inorder_traversal(node.left)
+        print(node, end=' ')
+        if node.right:
+            self.inorder_traversal(node.right)
 
     def postorder_traversal(self, node=None):
         if node is None:
@@ -95,14 +104,19 @@ class BinarySearchTree(BinaryTree):
             parent.left = Node(value)
         else:
             parent.right = Node(value)
+
+    def search(self, value):
+        return self._search(value, self.root)
+
     def _search(self, value, node):
-        if node is None or node.data == value:
+        if node is None:
+            return node
+        elif node.data == value:
             return BinarySearchTree(node)
         if value < node.data:
             return self._search(value, node.left)
         return self._search(value, node.right)
 
-    def
 
 if __name__ == "__main__":
     tree = postorder_example_tree()
